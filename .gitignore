@@ -1,0 +1,8 @@
+__pycache__/conftest.cpython-313-pytest-8.4.1.pyc
+__pycache__/data.cpython-313.pyc
+__pycache__/locators.cpython-313.pyc
+__pycache__/urls.cpython-313.pyc
+test/__pycache__/test_constructor.cpython-313-pytest-8.4.1.pyc
+test/__pycache__/test_login.cpython-313-pytest-8.4.1.pyc
+test/__pycache__/test_profile_page.cpython-313-pytest-8.4.1.pyc
+test/__pycache__/test_registration_page.cpython-313-pytest-8.4.1.pyc
