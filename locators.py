@@ -3,22 +3,22 @@ from selenium.webdriver.common.by import By
 #Главная страница
 class MainPageLocators:
     
-    main_form = (By.XPATH, ".//main[@class = 'App_componentContainer__2JC2W']") #Форма главной страницы сайта
-    logo_btn = (By.XPATH, ".//div[@class = 'AppHeader_header__logo__2D0X2']") #Кнопка главной страницы сайта
-    personal_account_btn = (By.XPATH, ".//p[text() = 'Личный Кабинет']") #Кнопка личного кабинета
-    login_account_btn = (By.XPATH, ".//button[text() = 'Войти в аккаунт']") #Кнопка войти в аккаунт
-    constructor_btn = (By.XPATH, ".//p[text() = 'Конструктор']") #Кнопка конструктор
+    main_form = (By.XPATH, "//main[@class = 'App_componentContainer__2JC2W']") #Форма главной страницы сайта
+    logo_btn = (By.XPATH, "//div[@class = 'AppHeader_header__logo__2D0X2']") #Кнопка главной страницы сайта
+    personal_account_btn = (By.XPATH, "//p[text() = 'Личный Кабинет']") #Кнопка личного кабинета
+    login_account_btn = (By.XPATH, "//button[text() = 'Войти в аккаунт']") #Кнопка войти в аккаунт
+    constructor_btn = (By.XPATH, "p//p[text() = 'Конструктор']") #Кнопка конструктор
     order_feed_btn = (By.XPATH, ".//p[text() = 'Лента Заказов']") #Кнопка лента заказов
     bun_btn = (By.XPATH, ".//span[text() = 'Булки']") #Кнопка переключения на булки
     sauces_btn = (By.XPATH, ".//span[text() = 'Соусы']") #Кнопка переключения на соусы
     toppings_btn = (By.XPATH, ".//span[text() = 'Начинки']") #Кнопка переключения на начинки
     place_order_button = (By.XPATH, ".//button[text() = 'Оформить заказ']") #Кнопка оформить заказ
     sauces = (By.XPATH, ".//h2[text() = 'Соусы']") #Текст соусы на главной странице
-    sauces_ul = (By.XPATH, "(.//ul[@class = 'BurgerIngredients_ingredients__list__2A-mT'])[2]") #Выбор соусов на главной странице
-    bun = (By.XPATH, ".//h2[text() = 'Булки']") #Текст булки на главной странице
-    bun_ul = (By.XPATH, "(.//ul[@class = 'BurgerIngredients_ingredients__list__2A-mT'])[1]") #Выбор булок на главной странице
+    sauces_ul =  (By.XPATH, "//h2[text()='Соусы']/following-sibling::ul[1]") #Выбор соусов на главной странице
+    bun =  (By.XPATH, ".//h2[text() = 'Булки']")  #Текст булки на главной странице
+    bun_ul = (By.XPATH, "//h2[text()='Булки']/following-sibling::ul[1]")      #Выбор булок на главной странице
     topping = (By.XPATH, ".//h2[text() = 'Начинки']") #Текст начинки на главной странице
-    topping_ul = (By.XPATH, "(.//ul[@class = 'BurgerIngredients_ingredients__list__2A-mT'])[3]") #Выбор начинок на главной странице
+    topping_ul  = (By.XPATH, "//h2[text()='Начинки']/following-sibling::ul[1]") #Выбор начинок на главной странице
 
 
 #Форма авторизации
